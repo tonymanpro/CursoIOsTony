@@ -21,7 +21,6 @@ class CategoryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
     func initializeCategories(){
         let economuCategory = Category(name: "Economía", image: "economy")
         let sportsCategory = Category(name: "Sports", image: "sports")
@@ -30,7 +29,6 @@ class CategoryViewController: UIViewController {
         categories = [economuCategory,sportsCategory,technologyCatery,incidentCategory]
         self.title = "Categorias"
     }
-    
 }
 
 extension CategoryViewController: UITableViewDataSource, UITableViewDelegate{
@@ -48,6 +46,13 @@ extension CategoryViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let  newsViewController =  storyboard?.instantiateViewController(withIdentifier:
+        NewsViewController.getViewControllerIndetifier()) as! NewsViewController
+        newsViewController.news = categories[indexPath.row].newsArray
+        navigationController?.pushViewController(newsViewController, animated: true)
     }
     
 }

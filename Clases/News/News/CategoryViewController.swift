@@ -28,6 +28,7 @@ class CategoryViewController: UIViewController {
         let technologyCatery = Category(name: "Tecnología", image: "technology")
         let incidentCategory = Category(name: "Sucesos", image: "incident")
         categories = [economuCategory,sportsCategory,technologyCatery,incidentCategory]
+        self.title = "Categorias"
     }
     
 }
@@ -41,6 +42,7 @@ extension CategoryViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.getTableViewCellIdentifier())
             as! CategoryTableViewCell
+        cell.setupCell(category: categories[indexPath.row])
         return cell
     }
     

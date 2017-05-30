@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EFB0FCE4F022D17EC8B5FDC /* Pods_Quiz4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E92A4B53789F2FC1ABE771 /* Pods_Quiz4.framework */; };
+		96CFF9E51EDE261E0074E549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CFF9E41EDE261E0074E549 /* AppDelegate.swift */; };
+		96CFF9EA1EDE261E0074E549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CFF9E81EDE261E0074E549 /* Main.storyboard */; };
+		96CFF9EC1EDE261E0074E549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CFF9EB1EDE261E0074E549 /* Assets.xcassets */; };
+		96CFF9EF1EDE261E0074E549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CFF9ED1EDE261E0074E549 /* LaunchScreen.storyboard */; };
+		96CFF9F91EDE270F0074E549 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CFF9F81EDE270F0074E549 /* RealmManager.swift */; };
+		96CFF9FC1EDE27350074E549 /* CatCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CFF9FA1EDE27350074E549 /* CatCustomTableViewCell.swift */; };
+		96CFF9FD1EDE27350074E549 /* CatCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96CFF9FB1EDE27350074E549 /* CatCustomTableViewCell.xib */; };
+		96CFF9FF1EDE27450074E549 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CFF9FE1EDE27450074E549 /* Helper.swift */; };
+		96CFFA011EDE27950074E549 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CFFA001EDE27950074E549 /* Cat.swift */; };
+		96CFFA031EDE28930074E549 /* CatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CFFA021EDE28930074E549 /* CatListViewController.swift */; };
+		96CFFA051EDE29DD0074E549 /* AddCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CFFA041EDE29DD0074E549 /* AddCatViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96CFF9E11EDE261E0074E549 /* Quiz4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CFF9E41EDE261E0074E549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96CFF9E91EDE261E0074E549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96CFF9EB1EDE261E0074E549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96CFF9EE1EDE261E0074E549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96CFF9F01EDE261E0074E549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CFF9F81EDE270F0074E549 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		96CFF9FA1EDE27350074E549 /* CatCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatCustomTableViewCell.swift; sourceTree = "<group>"; };
+		96CFF9FB1EDE27350074E549 /* CatCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatCustomTableViewCell.xib; sourceTree = "<group>"; };
+		96CFF9FE1EDE27450074E549 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		96CFFA001EDE27950074E549 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		96CFFA021EDE28930074E549 /* CatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatListViewController.swift; sourceTree = "<group>"; };
+		96CFFA041EDE29DD0074E549 /* AddCatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCatViewController.swift; sourceTree = "<group>"; };
+		98FE64564810FD41EB79617F /* Pods-Quiz4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz4.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quiz4/Pods-Quiz4.release.xcconfig"; sourceTree = "<group>"; };
+		AA89AD72C929184CA52078F8 /* Pods-Quiz4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quiz4/Pods-Quiz4.debug.xcconfig"; sourceTree = "<group>"; };
+		D4E92A4B53789F2FC1ABE771 /* Pods_Quiz4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quiz4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96CFF9DE1EDE261D0074E549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFB0FCE4F022D17EC8B5FDC /* Pods_Quiz4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20218DF04F2783F42B1B9C18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA89AD72C929184CA52078F8 /* Pods-Quiz4.debug.xcconfig */,
+				98FE64564810FD41EB79617F /* Pods-Quiz4.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96CFF9D81EDE261D0074E549 = {
+			isa = PBXGroup;
+			children = (
+				96CFF9E31EDE261E0074E549 /* Quiz4 */,
+				96CFF9E21EDE261E0074E549 /* Products */,
+				20218DF04F2783F42B1B9C18 /* Pods */,
+				FCEF12A277A0560BC66F6E23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96CFF9E21EDE261E0074E549 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96CFF9E11EDE261E0074E549 /* Quiz4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96CFF9E31EDE261E0074E549 /* Quiz4 */ = {
+			isa = PBXGroup;
+			children = (
+				96CFF9F71EDE26EC0074E549 /* Custom */,
+				96CFF9F61EDE26E40074E549 /* Managers */,
+				96CFF9E41EDE261E0074E549 /* AppDelegate.swift */,
+				96CFF9E81EDE261E0074E549 /* Main.storyboard */,
+				96CFF9EB1EDE261E0074E549 /* Assets.xcassets */,
+				96CFF9ED1EDE261E0074E549 /* LaunchScreen.storyboard */,
+				96CFF9F01EDE261E0074E549 /* Info.plist */,
+				96CFF9FE1EDE27450074E549 /* Helper.swift */,
+				96CFFA001EDE27950074E549 /* Cat.swift */,
+				96CFFA021EDE28930074E549 /* CatListViewController.swift */,
+				96CFFA041EDE29DD0074E549 /* AddCatViewController.swift */,
+			);
+			path = Quiz4;
+			sourceTree = "<group>";
+		};
+		96CFF9F61EDE26E40074E549 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				96CFF9F81EDE270F0074E549 /* RealmManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		96CFF9F71EDE26EC0074E549 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				96CFF9FA1EDE27350074E549 /* CatCustomTableViewCell.swift */,
+				96CFF9FB1EDE27350074E549 /* CatCustomTableViewCell.xib */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		FCEF12A277A0560BC66F6E23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4E92A4B53789F2FC1ABE771 /* Pods_Quiz4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96CFF9E01EDE261D0074E549 /* Quiz4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CFF9F31EDE261E0074E549 /* Build configuration list for PBXNativeTarget "Quiz4" */;
+			buildPhases = (
+				164FD8E569740535024CEF05 /* [CP] Check Pods Manifest.lock */,
+				96CFF9DD1EDE261D0074E549 /* Sources */,
+				96CFF9DE1EDE261D0074E549 /* Frameworks */,
+				96CFF9DF1EDE261D0074E549 /* Resources */,
+				ED2363E013471A856CD8852C /* [CP] Embed Pods Frameworks */,
+				FB32CC40837DC5A73F0B190C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quiz4;
+			productName = Quiz4;
+			productReference = 96CFF9E11EDE261E0074E549 /* Quiz4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96CFF9D91EDE261D0074E549 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "IMPESA S.A";
+				TargetAttributes = {
+					96CFF9E01EDE261D0074E549 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 96CFF9DC1EDE261D0074E549 /* Build configuration list for PBXProject "Quiz4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96CFF9D81EDE261D0074E549;
+			productRefGroup = 96CFF9E21EDE261E0074E549 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96CFF9E01EDE261D0074E549 /* Quiz4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96CFF9DF1EDE261D0074E549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CFF9EF1EDE261E0074E549 /* LaunchScreen.storyboard in Resources */,
+				96CFF9FD1EDE27350074E549 /* CatCustomTableViewCell.xib in Resources */,
+				96CFF9EC1EDE261E0074E549 /* Assets.xcassets in Resources */,
+				96CFF9EA1EDE261E0074E549 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		164FD8E569740535024CEF05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED2363E013471A856CD8852C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiz4/Pods-Quiz4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB32CC40837DC5A73F0B190C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiz4/Pods-Quiz4-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96CFF9DD1EDE261D0074E549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CFF9FC1EDE27350074E549 /* CatCustomTableViewCell.swift in Sources */,
+				96CFFA011EDE27950074E549 /* Cat.swift in Sources */,
+				96CFF9FF1EDE27450074E549 /* Helper.swift in Sources */,
+				96CFFA031EDE28930074E549 /* CatListViewController.swift in Sources */,
+				96CFFA051EDE29DD0074E549 /* AddCatViewController.swift in Sources */,
+				96CFF9E51EDE261E0074E549 /* AppDelegate.swift in Sources */,
+				96CFF9F91EDE270F0074E549 /* RealmManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96CFF9E81EDE261E0074E549 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96CFF9E91EDE261E0074E549 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96CFF9ED1EDE261E0074E549 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96CFF9EE1EDE261E0074E549 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96CFF9F11EDE261E0074E549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96CFF9F21EDE261E0074E549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96CFF9F41EDE261E0074E549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA89AD72C929184CA52078F8 /* Pods-Quiz4.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Quiz4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IMPESA.Quiz4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		96CFF9F51EDE261E0074E549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98FE64564810FD41EB79617F /* Pods-Quiz4.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Quiz4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IMPESA.Quiz4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96CFF9DC1EDE261D0074E549 /* Build configuration list for PBXProject "Quiz4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CFF9F11EDE261E0074E549 /* Debug */,
+				96CFF9F21EDE261E0074E549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CFF9F31EDE261E0074E549 /* Build configuration list for PBXNativeTarget "Quiz4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CFF9F41EDE261E0074E549 /* Debug */,
+				96CFF9F51EDE261E0074E549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96CFF9D91EDE261D0074E549 /* Project object */;
+}

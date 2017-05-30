@@ -79,11 +79,16 @@
                                     <action selector="selectPhotoButton:" destination="JkP-OV-yO6" eventType="touchUpInside" id="MA7-zL-8Jl"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4lR-O4-NKS">
+                                <rect key="frame" x="67" y="416" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="colorTextField" destination="aQt-wH-PV4" id="Iit-mn-ZYz"/>
+                        <outlet property="myImageView" destination="4lR-O4-NKS" id="VCi-0l-ze2"/>
                         <outlet property="nameTextField" destination="a3i-N1-URN" id="Z90-Pi-XS2"/>
                     </connections>
                 </viewController>

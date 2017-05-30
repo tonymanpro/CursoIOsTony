@@ -26,7 +26,7 @@ class RealmManager: NSObject {
     class func getAllDogs() -> List<Dogs>?{
         let realm = try! Realm()
         
-        var data = realm.objects(Dogs.self)
+        let data = realm.objects(Dogs.self)
         
         let convert = data.reduce(List<Dogs>()) {(list, element) -> List<Dogs> in
         list.append(element)

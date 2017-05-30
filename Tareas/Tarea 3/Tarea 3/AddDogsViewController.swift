@@ -13,8 +13,11 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var colorTextField: UITextField!
-    var myImageView: UIImageView?
+    var myImageViewData: UIImageView?
     let myPickerController = UIImagePickerController()
+    
+    @IBOutlet weak var myImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +33,15 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func saveNewsAction(){
         
-        var data = UIImagePNGRepresentation((myImageView?.image)!) as NSData?
-        
-        RealmManager.addDogs(name: nameTextField.text!, imageName: data! , color: colorTextField.text!)
+        if (myImageViewData?.image) != nil {
+            
+            let imageData = UIImagePNGRepresentation((myImageViewData?.image)!)
+            
+            RealmManager.addDogs(name: nameTextField.text!, imageName: imageData! as NSData , color: colorTextField.text!)
+            
+        }else {
+            print("se desmadro tere")
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,12 +51,19 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBAction func selectPhotoButton(_ sender: Any) {
         myPickerController.sourceType = .photoLibrary
+        myPickerController.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
         present(myPickerController,animated: true, completion: nil)
     }
     
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        myImageView?.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            myImageViewData?.image = image
+            myImageView.image = image
+        }else {
+            print("se desmadro tere")
+        }
+        
         self.dismiss(animated: true, completion: nil)
     }
     

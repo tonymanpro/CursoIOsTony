@@ -28,18 +28,18 @@ class NewsTableViewCell: UITableViewCell {
     }
     
     func setupCell(news: News){
-        titleLabel.text = news.titleNews
+       titleLabel.text = news.title
         descriptionLabel.text = news.descriptionNews
-        dateLabel.text = news.createdAt.toString(dateFormat: "yyyy-MM-dd HH:mm:ss")
+        dateLabel.text = news.createdAt?.toString(dateFormat: "yyyy-MM-dd HH:mm:ss")
     }
     
 }
 
-
 extension Date{
-    func toString(dateFormat: String)-> String{
+    func toString(dateFormat: String ) -> String{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = dateFormat
         return dateFormatter.string(from: self)
     }
 }
+

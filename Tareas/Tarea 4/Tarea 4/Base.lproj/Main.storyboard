@@ -63,7 +63,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KNg-tX-9MQ">
                                 <rect key="frame" x="16" y="20" width="343" height="100"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEn-o4-fyL">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DEn-o4-fyL">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWX-ju-Tza">
@@ -76,7 +76,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6L4-dT-wQe">
-                                                <rect key="frame" x="70" y="0.0" width="273" height="50"/>
+                                                <rect key="frame" x="75" y="0.0" width="268" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -87,16 +87,16 @@
                                         <rect key="frame" x="0.0" y="50" width="343" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdI-Sc-wFs">
-                                                <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="70" id="aXz-VT-uiJ"/>
+                                                    <constraint firstAttribute="width" constant="75" id="aXz-VT-uiJ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Yl-bz-Yjh">
-                                                <rect key="frame" x="70" y="0.0" width="273" height="50"/>
+                                                <rect key="frame" x="75" y="0.0" width="268" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -113,10 +113,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTd-7O-sFs">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="aL0-i3-gdZ"/>
                                         </constraints>
-                                        <state key="normal" title="Random Dog Photo"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Random Dog Photo">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="randomPhotoButton:" destination="ZOp-dk-dyi" eventType="touchUpInside" id="Kmg-Ns-A21"/>
                                         </connections>
@@ -126,10 +130,13 @@
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icc-ZM-xwT">
                                         <rect key="frame" x="0.0" y="497" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="J1W-1Z-Sl0"/>
                                         </constraints>
-                                        <state key="normal" title="Upload Photo"/>
+                                        <state key="normal" title="Upload Photo">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="selectPhotoButton:" destination="ZOp-dk-dyi" eventType="touchUpInside" id="N9l-jq-y3b"/>
                                         </connections>
@@ -143,13 +150,17 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="s5r-I6-s6q" firstAttribute="top" secondItem="6Eb-C1-3ya" secondAttribute="bottom" id="2et-Pu-Heq"/>
+                            <constraint firstItem="KNg-tX-9MQ" firstAttribute="leading" secondItem="0bU-KU-1Ee" secondAttribute="leadingMargin" id="CJs-mq-ucD"/>
+                            <constraint firstItem="KNg-tX-9MQ" firstAttribute="top" secondItem="jB3-oj-fH5" secondAttribute="bottom" id="Gd8-6H-sqG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KNg-tX-9MQ" secondAttribute="trailing" id="HNQ-Sr-7lK"/>
                             <constraint firstItem="KNg-tX-9MQ" firstAttribute="leading" secondItem="0bU-KU-1Ee" secondAttribute="leadingMargin" id="JUx-VI-neK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6Eb-C1-3ya" secondAttribute="trailing" id="Lxr-QA-zrb"/>
+                            <constraint firstItem="KNg-tX-9MQ" firstAttribute="trailing" secondItem="0bU-KU-1Ee" secondAttribute="trailingMargin" id="XFk-hi-na3"/>
                             <constraint firstItem="6Eb-C1-3ya" firstAttribute="top" secondItem="KNg-tX-9MQ" secondAttribute="bottom" id="dXM-57-rfM"/>
+                            <constraint firstItem="6Eb-C1-3ya" firstAttribute="top" secondItem="KNg-tX-9MQ" secondAttribute="bottom" id="pWk-oS-paL"/>
                             <constraint firstItem="KNg-tX-9MQ" firstAttribute="top" secondItem="jB3-oj-fH5" secondAttribute="bottom" id="tdf-sW-5UZ"/>
                             <constraint firstItem="6Eb-C1-3ya" firstAttribute="leading" secondItem="0bU-KU-1Ee" secondAttribute="leadingMargin" id="wQV-2J-KJ9"/>
                         </constraints>

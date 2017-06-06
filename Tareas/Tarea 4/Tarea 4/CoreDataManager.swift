@@ -12,8 +12,7 @@ import MagicalRecord
 
 class CoreDataManager: NSObject {
     
-    
-    class func getAllCategories() -> [Dogs] {
+    class func getAllDogs() -> [Dogs] {
         let result = Dogs.mr_findAll()
         if result!.count == 0 {
             return createDefaultDog()
@@ -24,7 +23,7 @@ class CoreDataManager: NSObject {
     class func createDefaultDog() -> [Dogs] {
         createDog(dogName: "Firulais", dogColor: "White", imageName: "dog01")
         saveContext()
-        return getAllCategories()
+        return getAllDogs()
     }
     
     class func createDog(dogName:String, dogColor: String, imageName:String){

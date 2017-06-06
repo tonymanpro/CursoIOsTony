@@ -37,7 +37,6 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     }
     
     func saveNewsAction(){
-        
         if (myImageViewData?.image) != nil {
             CoreDataManager.createDog(dogName: bameTextField.text!, dogColor: colorTextField.text!, imageName: (imageExample.accessibilityIdentifier)! )
         }else {
@@ -50,12 +49,14 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     }
     
     @IBAction func randomPhotoButton(_ sender: Any) {
+        let numbre = Int32.random(lower: 1, upper: 5)
+        CoreDataManager.createDog(dogName: bameTextField.text!, dogColor: colorTextField.text!, imageName: "dog0" + String(numbre))
     }
     
     @IBAction func selectPhotoButton(_ sender: Any) {
         myPickerController.sourceType = .photoLibrary
         myPickerController.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
-        present(myPickerController,animated: true, completion: nil)
+        present(myPickerController, animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -70,3 +71,13 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     }
     
 }
+
+
+public extension Int32 {
+    public static func random(lower: Int32 = min, upper: Int32 = max) -> Int32 {
+        let r = arc4random_uniform(UInt32(Int64(upper) - Int64(lower)))
+        return Int32(Int64(r) + Int64(lower))
+    }
+}
+
+

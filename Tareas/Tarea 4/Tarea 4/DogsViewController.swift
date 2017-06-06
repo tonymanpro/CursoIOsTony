@@ -26,6 +26,7 @@ class DogsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        dogs = CoreDataManager.getAllDogs()
         tableView.reloadData()
     }
     

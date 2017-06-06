@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rkq-y9-6t6">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rkq-y9-6t6">
                         <rect key="frame" x="15" y="15" width="290" height="183.5"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXS-Dq-u6c">
@@ -48,11 +48,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="colorLabel" destination="3hM-Pg-bhe" id="Y6L-AE-qEY"/>
                 <outlet property="dogColor" destination="3hM-Pg-bhe" id="ErO-Cb-d2G"/>
                 <outlet property="dogImage" destination="Rkq-y9-6t6" id="i4K-i9-Y6c"/>
                 <outlet property="dogName" destination="jXS-Dq-u6c" id="ULv-1G-sca"/>
-                <outlet property="nombreLabel" destination="jXS-Dq-u6c" id="aUC-QV-6VZ"/>
             </connections>
             <point key="canvasLocation" x="-17" y="-196"/>
         </tableViewCell>

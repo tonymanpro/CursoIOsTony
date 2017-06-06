@@ -36,7 +36,7 @@ class ViewController: UIViewController, NVActivityIndicatorViewable{
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func ChangeLanguages(_ sender: Any) {
+    @IBAction func changeLabel(_ sender: Any) {
         let backUp = originLanguage
         originLanguage = destinationLanguage
         destinationLanguage = backUp
@@ -53,8 +53,14 @@ class ViewController: UIViewController, NVActivityIndicatorViewable{
     
     func getLanguagesAviable(notification: Notification){
         languagesArray = notification.userInfo?[Constants.LANGUAGE_KEY] as? [[String: String]]
-        hideActivityIndicator()
-        print("EL TAMANO DEL ARRAY ES DE \(languagesArray?.count)")
+        if languagesArray != nil && languagesArray!.count > 0 {
+            languagesArray = languagesArray?.sorted { $0[Constants.LANGUAGE_KEY]! < $1[Constants.LANGUAGE_KEY]! }
+            hideActivityIndicator()
+            print("EL TAMANO DEL ARRAY ES DE \(languagesArray?.count)")        }
+        
+        else {
+            errorFound()
+        }
     }
     
     func errorFound(){
@@ -84,7 +90,7 @@ class ViewController: UIViewController, NVActivityIndicatorViewable{
     
     
     @IBAction func originLenguajeAction(_ sender: Any) {
-        presentLanguageController(languageType: Constants.LanguageType.destination)
+        presentLanguageController(languageType: Constants.LanguageType.origin)
     }
     
     func presentLanguageController(languageType: Constants.LanguageType){
@@ -109,12 +115,21 @@ class ViewController: UIViewController, NVActivityIndicatorViewable{
     @IBAction func destinationLenguajeAction(_ sender: Any) {
         presentLanguageController(languageType: Constants.LanguageType.destination)
     }
-    
-    
-    @IBAction func changeLenguajeAction(_ sender: Any) {
-        presentLanguageController(languageType: Constants.LanguageType.origin)
+
+    @IBAction func translateButton(_ sender: Any) {
+        if originTextView.text!.isEmptyOrWhiteSpace() {
+            let alert = UIAlertController(title: "Error Found", message: "Text is empty", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+        }
+        
+        ApiManager.createTranslate(origininalLanguage: originLanguage!, destinationLanguage: destinationLanguage!,
+                                   textToTranslate: originTextView.text!) { (textTranslated) in
+        self.hideActivityIndicator()
+        self.destinationTextView.text = textTranslated}
     }
-    
+
 
     func updateLangageLabels(){
         originalLanguageLabel.text = originLanguage?.uppercased()
@@ -143,8 +158,11 @@ extension ViewController: LanguagesViewControllerDelegate{
     }
 }
 
-
-
+extension String {
+    func isEmptyOrWhiteSpace() -> Bool{
+        return self.trimmingCharacters(in: CharacterSet.whitespaces).isEmpty
+    }
+}
 
 
 
